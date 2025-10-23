@@ -188,6 +188,13 @@ body {
   font-size: 15px;
 }
 
+.work-info a {
+    text-decoration: none;
+    color: #1b1f3b;
+    font-weight: bold;
+    margin: 0;
+}
+
 .work-info p {
   color: #555;
   line-height: 1.6;
@@ -201,6 +208,35 @@ body {
 
 .blog-item h2 {
     text-align: left;
+}
+
+.work-detail img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.work-detail p {
+    text-align: justify;
+}
+
+.work-detail h1 {
+    text-align: justify;
+}
+
+.work-detail h2 {
+    text-align: justify;
+}
+
+figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
 }
 
 .footer {
