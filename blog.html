@@ -9,83 +9,92 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-        <a href="blog.html" class="active">Blog</a>
-        <a href="works.html">Works</a>
-        <a href="https://www.instagram.com/naaresz/">Contact</a>
+   <header class="header">
+        <nav class="navbar">
+            <a href="works.html">Works</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://www.instagram.com/naaresz/">Contact</a>
+        </nav>
+        <button class="menu-toggle">☰</button>
     </header>
+    <main>
+        <h1 class="page-title">Blog</h1>
+        <div class="container">
+            <div class="blog-list">
+                <div class="blog-item">
+                    <h2>How to Think About Your Career</h2>
+                    <div class="meta">
+                        <span>12 Feb 2019</span>
+                        <span class="divider"></span>
+                        <span class="tag">Career</span>
+                    </div>
+                    <p>
+                        If you had asked 22-year-old me what my “career aspirations” were, I would have looked at you blankly and then casually changed the subject to what programs you’d recommend to model cute 3D bunnies for a video game,....
+                    </p>
+                </div>
+                <hr>
+                <div class="blog-item">
+                    <h2>Sekolah Jangan Paksa Siswa Makan MBG Jika Nasi Basi</h2>
+                    <div class="meta">
+                        <span>12 Feb 2019</span>
+                        <span class="divider"></span>
+                        <span class="tag">Social</span>
+                    </div>
+                    <p>
+                        Saya pribadi senang sekali ketika pemerintah pusat meluncurkan Program Makan Bergizi Gratis (MBG). Tujuannya jelas, mulia, dan penuh harapan: memastikan setiap siswa mendapat asupan bergizi tanpa terkendala biaya. Tidak semua anak beruntung bisa membawa bekal dari rumah,...
+                    </p>
+                </div>
+                <hr>
+                <div class="blog-item">
+                    <h2>Darurat Konsumsi Rokok, Ancaman Nyata bagi Masa Depan Bangsa</h2>
+                    <div class="meta">
+                        <span>12 Feb 2019</span>
+                        <span class="divider"></span>
+                        <span class="tag">Kesehatan, Bahaya Rokok</span>
+                    </div>
+                    <p>
+                        Pagi hari di berbagai sudut jalan perkotaan, lalu lintas dipadati oleh pelajar yang berangkat sekolah, para pekerja, hingga pedagang yang bersiap memulai aktivitas. Namun, ada satu pemandangan yang terus mengusik hati, sekelompok remaja berseragam putih abu-abu, dengan santainya menghisap rokok sambil mengendarai sepeda motor. Semburan asap rokok menyatu dengan hiruk-pikuk pagi, seakan menjadi hal yang biasa. 
+                    </p>
+                </div>
+                <hr>
+                <div class="blog-item">
+                    <h2>Menanam Sayuran : Konversi Hobi Menjadi Upaya Pemasaran</h2>
+                    <div class="meta">
+                        <span>4 Sep 2025</span>
+                        <span class="divider"></span>
+                        <span class="tag">Budidaya, sayuran</span>
+                    </div>
+                    <p>
+                        Selain tanaman padi dan bawang, jenis sayuran yang banyak ditanam di lingkungan Zeze Zahra adalah kembang kol. Awalnya kembang kol ini ditanam karena memang saya dan keluarga menyukainya. Zeze Zahra juga mau coba tanam sebagai ujicoba media tanam dan sebagai validasi benefit penggunaan konsep raised bed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+          <div class="social-icons">
+              <a href="#"><img src="assets/fb.jpg" alt="Facebook"></a>
+              <a href="#"><img src="assets/twt.jpg" alt="Twitter"></a>
+              <a href="#"><img src="assets/ig.png" alt="Instagram"></a>
+              <a href="#"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+          </div>
+          <div class="footer-content">
+              <p>Copyright &copy; 2020 All Rights reserved</p>
+          </div>
+    </footer>
+    <script>
+        const toggleBtn = document.querySelector(".menu-toggle");
+        const navbar = document.querySelector('.navbar');
+
+        toggleBtn.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+        });
+    </script>
+    </body>
+    </html>
     
 
-  <main>
-    <h1 class="page-title">Blog</h1>
-    <div class="container">
-        <div class="blog-list">
-          <div class="blog-item">
-            <h2>UI Interactions of the week</h2>
-            <div class="meta">
-              <span>12 Feb 2019</span>
-              <span class="divider"></span>
-              <span class="tag">Express, Handlebars</span>
-            </div>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-              Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </div>
-          <div class="line"></div>
-          <hr>
-          <div class="blog-item">
-            <h2>UI Interactions of the week</h2>
-            <div class="meta">
-              <span>12 Feb 2019</span>
-              <span class="divider"></span>
-              <span class="tag">Express, Handlebars</span>
-            </div>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-              Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </div>
-          <hr>
-          <div class="blog-item">
-            <h2>UI Interactions of the week</h2>
-            <div class="meta">
-              <span>12 Feb 2019</span>
-              <span class="divider"></span>
-              <span class="tag">Express, Handlebars</span>
-            </div>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-              Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </div>
-          <hr>
-          <div class="blog-item">
-            <h2>UI Interactions of the week</h2>
-            <div class="meta">
-              <span>12 Feb 2019</span>
-              <span class="divider"></span>
-              <span class="tag">Express, Handlebars</span>
-            </div>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-              Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-          </div>
-        </div>
-    </div>
-  </main>
+           
 
-  <footer>
-        <div class="social-icons">
-            <a href="#"><img src="assets/fb.jpg" alt="Facebook"></a>
-            <a href="#"><img src="assets/twt.jpg" alt="Twitter"></a>
-            <a href="#"><img src="assets/ig.png" alt="Instagram"></a>
-            <a href="#"><img src="assets/linkedin.png" alt="LinkedIn"></a>
-        </div>
-        <div class="footer-content">
-            <p>Copyright &copy; 2020 All Rights reserved</p>
-        </div>
-    </footer>
-</body>
-</html>

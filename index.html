@@ -7,14 +7,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="works.html">Works</a>
-        <a href="blog.html">Blog</a>
-        <a href="https://www.instagram.com/naaresz/">Contact</a>
+    <header class="header">
+        <nav class="navbar">
+            <a href="works.html">Works</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://www.instagram.com/naaresz/">Contact</a>
+        </nav>
+        <button class="menu-toggle">☰</button>
     </header>
     <div class="container">
         <div class="text-section">
-            <h1>Hi, I am Nares,<br>Creative Technologist</h1>
+            <h1>Hi, I am Andira Finna Nareswari,<br>Informatics Technology student</h1>
             <p>Saya merupakan mahasiswa semester 3 dari Prodi d4 Teknik Informatika. <br> Saya dari Universitas Harkat Negri dan sekarang sedang mempelajari mengenai Pemograman Web 1. <br> Hobi saya sekarang lebih sering bermain game Roblox selain itu saya hobi membuat list buku yang harus dibeli.</p>
             <button class="btn">Download Resume</button>
         </div>
@@ -45,7 +48,7 @@
              <p class="desc">
                 Kalau bicara soal olahraga, kebanyakan perempuan pasti pernah merasa bingung. Satu sumber bilang begini, yang lain bilang begitu, mana yang benar? Mau olahraga apa, berapa kali seminggu, semuanya bikin pusing.
              </p>
-            <div> 
+            </div> 
         </div>
     </section>
 
@@ -107,5 +110,13 @@
             <p>Copyright &copy; 2020 All Rights reserved</p>
         </div>
     </footer>
+    <script>
+        const toggleBtn = document.querySelector(".menu-toggle");
+        const navbar = document.querySelector('.navbar');
+
+        toggleBtn.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>

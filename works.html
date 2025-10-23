@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="blog.html">Blog</a>
-        <a href="works.html" class="active">Works</a>
-        <a href="https://www.instagram.com/naaresz/">Contact</a>
+    <header class="header">
+        <nav class="navbar">
+            <a href="works.html">Works</a>
+            <a href="blog.html">Blog</a>
+            <a href="https://www.instagram.com/naaresz/">Contact</a>
+        </nav>
+        <button class="menu-toggle">☰</button>
     </header>
 
     <section class="featured-works">
@@ -32,50 +35,49 @@
         </div>
         <hr>
         <div class="work-item">
-      <img src="assets/bahan1.jpeg" alt="“Contains AI”">
-      <div class="work-info">
-        <h3>“Contains AI”: Should Music Come With a Label?</h3>
-        <div class="work-meta">
-          <span class="year">2018</span>
-          <span class="category">Pendidikan</span>
+            <img src="assets/bahan1.jpeg" alt="“Contains AI”">
+            <div class="work-info">
+                <h3>“Contains AI”: Should Music Come With a Label?</h3>
+                <div class="work-meta">
+                    <span class="year">2018</span>
+                    <span class="category">Pendidikan</span>
+                </div>
+                <p>
+                    Should AI-generated music come with a “Contains AI” label, like food containing additives?
+                </p>
+            </div>
         </div>
-        <p>
-          Should AI-generated music come with a “Contains AI” label, like food containing additives?
-        </p>
-      </div>
-    </div>
-    <hr>
-    <div class="work-item">
-      <img src="assets/bahan2.jpg" alt="Surat Untuk Juru Parkir Indonesia">
-      <div class="work-info">
-        <h3>Surat Terbuka untuk Para Juru Parkir di Indonesia</h3>
-        <div class="work-meta">
-          <span class="year">2018</span>
-          <span class="category">Social</span>
+        <hr>
+        <div class="work-item">
+            <img src="assets/bahan2.jpg" alt="Surat Untuk Juru Parkir Indonesia">
+            <div class="work-info">
+                <h3>Surat Terbuka untuk Para Juru Parkir di Indonesia</h3>
+                <div class="work-meta">
+                    <span class="year">2018</span>
+                    <span class="category">Social</span>
+                </div>
+                <p>
+                    Di mana-mana, juru parkir hampir selalu ada menunggu lapak idamannya. Beberapa orang, bahkan ada yang menyebutnya dengan sebutan hantu parkiran. Karena tiba-tiba muncul di tempat parkir padahal sebelumnya tidak ada.
+                </p>
+            </div>
         </div>
-        <p>
-          Di mana-mana, juru parkir hampir selalu ada menunggu lapak idamannya. Beberapa orang, bahkan ada yang menyebutnya dengan sebutan hantu parkiran. Karena tiba-tiba muncul di tempat parkir padahal sebelumnya tidak ada.
-        </p>
-      </div>
-    </div>
-    <hr>
-    <div class="work-item">
-      <img src="assets/bahan3.jpeg" alt="Menilai Buku dari Sampulnya">
-      <div class="work-info">
-        <h3>Menilai Buku dari Sampulnya</h3>
-        <div class="work-meta">
-          <span class="year">2018</span>
-          <span class="category">Pendidikan</span>
+        <hr>
+        <div class="work-item">
+            <img src="assets/bahan3.jpeg" alt="Menilai Buku dari Sampulnya">
+            <div class="work-info">
+                <h3>Menilai Buku dari Sampulnya</h3>
+                <div class="work-meta">
+                    <span class="year">2018</span>
+                    <span class="category">Pendidikan</span>
+                </div>
+                <p>
+                    Setelah sekian lama tidak membeli buku, akhirnya waktu membeli buku tiba juga. Gajian sudah tersisihkan, maka saatnya mencari buku yang saya ingin beli dan baca, serta murah.
+                </p>
+            </div>
         </div>
-        <p>
-          Setelah sekian lama tidak membeli buku, akhirnya waktu membeli buku tiba juga. Gajian sudah tersisihkan, maka saatnya mencari buku yang saya ingin beli dan baca, serta murah.
-        </p>
-      </div>
-    </div>
-    <hr>
+        <hr>
     </section>
-
-     <footer>
+    <footer>
         <div class="social-icons">
             <a href="#"><img src="assets/fb.jpg" alt="Facebook"></a>
             <a href="#"><img src="assets/twt.jpg" alt="Twitter"></a>
@@ -86,5 +88,18 @@
             <p>Copyright &copy; 2020 All Rights reserved</p>
         </div>
     </footer>
+    <script>
+        const toggleBtn = document.querySelector(".menu-toggle");
+        const navbar = document.querySelector('.navbar');
+
+        toggleBtn.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
+
+
+
+
+            
